@@ -1,0 +1,39 @@
+<h2 mat-dialog-title>Add Employee</h2>
+
+<mat-dialog-content>
+  <form (ngSubmit)="submitForm()">
+    <mat-form-field appearance="fill">
+      <mat-label>First Name</mat-label>
+      <input
+        matInput
+        placeholder="Enter your first name"
+        [(ngModel)]="fName"
+        name="fNameField"
+      />
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Last Name</mat-label>
+      <input
+        matInput
+        placeholder="Enter your last name"
+        [(ngModel)]="lName"
+        name="lNameField"
+      />
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Email</mat-label>
+      <input
+        matInput
+        placeholder="Enter your email"
+        [(ngModel)]="email"
+        name="emailField"
+      />
+    </mat-form-field>
+    <mat-dialog-actions>
+      <button mat-raised-button mat-dialog-close color="basic" type="reset">
+        Cancel
+      </button>
+      <button mat-raised-button color="primary" type="submit">Submit</button>
+    </mat-dialog-actions>
+  </form>
+</mat-dialog-content>

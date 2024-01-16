@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+/*@import "../node_modules/primeicons/primeicons.css";*/
+@import "../node_modules/primeng/resources/themes/saga-orange/theme.css";
+@import "../node_modules/primeng/resources/primeng.min.css";
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+.add-btn {
+    display: inline-block;
+    background: black;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: inherit;
+  }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
